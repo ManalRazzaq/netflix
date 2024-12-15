@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .owl-carousel {
+      position: relative;
+    }
+
+
+    /* Style the left navigation button (prev) */
+    .owl-prev {
+      background-color: #605a5a80 !important;
+      color: #fff !important;
+      font-size: 40px !important;
+      position: absolute;
+      left: -30px;
+      /* Adjust as needed */
+      top: 50%;
+      border-radius: 5px;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+      width: 18px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+
+    }
+
+    .owl-next {
+      background-color: #605a5a80 !important;
+      color: #fff !important;
+      font-size: 40px !important;
+      position: absolute;
+      border-radius: 5px;
+      right: -30px;
+      /* Adjust as needed */
+      top: 50%;
+      width: 18px;
+      height: 80px;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <div class="w-[100%] h-[100vh] bg-[url('./assest/banner.jpg')] bg-cover bg-center ">
+    <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.7)]">
+      <div
+        class="max-w-[1170px] mx-auto grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center py-[20px] sm:py-[5px]">
+        <div>
+          <img src="./assest/Netflix_Logo.png" class="w-[148px]" alt="">
+        </div>
+        <div class="flex justify-end gap-[10px]">
+          <div class="relative">
+            <i class="fa-solid fa-globe absolute top-[10px] left-[7px] text-white"></i>
+            <select name="" id=""
+              class="bg-black text-white  border-[1px] border-white p-[5px_20px] sm:p-[5px_25px] rounded-[5px]">
+              <option value="">English</option>
+              <option value="">Urdu</option>
+            </select>
+          </div>
+
+          <button class="bg-red-600 px-[10px] rounded-[5px] text-white">Sign in</button>
+
+        </div>
+
+
+      </div>
+
+
+      <div class=" w-[100%] min-h-[100px] mt-[60px] sm:mt-[80px] text-white text-center">
+        <h1 class="font-bold  text-center text-[30px] sm:text-[50px] ">Unlimited movies, TV shows, and more</h1>
+        <p class="text-white sm:text-[20px] leading-[40px] sm:leading-[80px]">Starts at Rs 250. Cancel anytime.</p>
+        <p class="text-white font-semibold">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form action="" class="flex sm:flex-row flex-col justify-center sm:gap-1 mt-[13px] gap-3 w-[70%] mx-auto">
+          <input type="email" class="bg-transparent border border-gray-500 py-[12px] rounded-[5px] sm:px-[70px] ">
+          <div
+            class="py-2 flex px-[20px] text-[22px] font-semibold rounded-[5px] bg-red-700 text-white justify-center items-center w-fit mx-auto  sm:mx-0">
+            <button class="">Get Started</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Cards Section -->
+
+  </div>
+  <div class="px-12 max-w-7xl pt-5 mx-auto lg:mt-[20px] lg:px-24">
+
+    <h1 class="font-bold text-[20px] sm:text-[25px] pb-3 text-white">Trending Now</h1>
+    <div class="flex flex-col sm:flex-row gap-[10px]">
+      <select name="" id="" class="bg-black text-white py-[10px] sm:px-3 border-2 border-white">
+        <option value="">Pakistan</option>
+        <option value="">GLobal</option>
+      </select>
+      <select name="" id="" class="bg-black text-white py-[10px] sm:px-3 border-2 border-white">
+        <option value="">Movies</option>
+        <option value="">Tv shows</option>
+      </select>
+    </div>
+    <!-- Cards -->
+    <div class="flex flex-row mt-10 px-7 owl-carousel">
+      <div class="flex min-w-24 min-h-24  gap-8 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card1.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card2.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card3.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card4.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card5.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card6.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card7.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+      <div class="flex min-w-24 min-h-24 items-center justify-center md:min-h-32 md:min-w-32">
+        <img src="./assest/card8.webp" class="rounded-[10px] w-[150px] md:w-[200px]" alt="">
+      </div>
+    </div>
+
+
+    <!-- 2nd Crads -->
+
+    <div class="mt-14">
+      <h1 class="text-white text-[25px]">More Reasons to Join</h1>
+
+
+      <div class="flex flex-col lg:flex-row mt-6 gap-6 ">
+        <div id="card1" class="flex-1 rounded-lg px-5 py-[30px] bg-gradient-to-br from-[#1c1b36] to-[#201220] mt-2">
+          <h1 class="font-bold  text-[18px] sm:text-[24px] pb-2 text-gray-200 pr-2">Enjoy on your TV</h1>
+          <p class="text-[15px] md:text-[17px] font-normal text-gray-200">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+          </p>
+          <div class="flex justify-end items-end pt-4 lg:mt-[69px]">
+            <img src="./assest/computericon.png" class="w-12 h-auto" alt="">
+          </div>
+        </div>
+
+        <div id="card2" class="flex-1 rounded-lg px-5 py-[30px] bg-gradient-to-br from-[#1c1b36] to-[#201220] mt-2 ">
+          <h1 class="font-bold text-[18px] sm:text-[24px] pb-2 text-gray-200">Download your shows to watch offline</h1>
+          <p class="text-[15px] md:text-[17px] font-normal text-gray-200">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+          </p>
+          <div class="flex justify-end items-end pt-4">
+            <img src="./assest/downloadicon.png" class="w-12 h-auto" alt="">
+          </div>
+        </div>
+
+        <div id="card3" class="flex-1 rounded-lg px-5 py-[30px]  bg-gradient-to-br from-[#1c1b36] to-[#201220] mt-2 ">
+          <h1 class="font-bold text-[18px] sm:text-[24px] pb-2 text-gray-200">Watch everywhere</h1>
+          <p class="text-[15px] md:text-[17px] font-normal text-gray-200">Stream unlimited movies and TV shows on your
+            phone, tablet, laptop, and TV.</p>
+          <div class="flex justify-end items-end pt-4 lg:mt-[69px]">
+            <img src="./assest/watchicon.png" class="w-12 h-auto" alt="">
+          </div>
+        </div>
+        <div id="card1" class="flex-1 rounded-lg px-5 py-[30px] bg-gradient-to-br from-[#1c1b36] to-[#201220] mt-2 ">
+          <h1 class="font-bold text-[18px] sm:text-[24px] pb-2 text-gray-200">Create profiles for kids</h1>
+          <p class="text-[15px] md:text-[17px] font-normal text-gray-200">
+            Send kids on adventures with their favorite characters in a space made just for them — free with your
+            membership.
+          </p>
+          <div class="flex justify-end items-end pt-4 lg:mt-[11px]">
+            <img src="./assest/kid_icon.png" class="w-12 h-auto" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--Section Feartures  -->
+  <div id="features"
+    class="flex flex-col lg:flex-row mt-10 justify-center items-center border-b-4 border-gray-500 py-6 px-6 lg:justify-between">
+    <div class="lg:w-3/4">
+      <h1 class="text-white text-center text-[22px] lg:text-[50px] lg:font-bold lg:text-start px-[40px]">Enjoy on your
+        TV.</h1>
+      <p class="text-white text-center pt-4 px-[40px] lg:text-start lg:font-semibold lg:text-[20px]">Watch on Smart TVs,
+        Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="relative">
+      <img src="./assest/tv.png" alt="movie" loading="lazy" class="relative z-[2]">
+      <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+        class="absolute max-w-[73%] max-h-[54%] top-[22%] left-[14%]" muted autoplay loop></video>
+    </div>
+  </div>
+
+  <!-- section features 2 -->
+  <div
+    class="flex flex-col lg:flex-row-reverse justify-center items-center mt-10 lg:justify-between py-6 px-6 border-b-4 border-gray-500">
+    <div class="w-3/4">
+      <h1 class="text-white text-center text-[22px] lg:text-[50px] lg:font-bold lg:text-start px-[40px]">Download your
+        shows to watch offline.</h1>
+      <p class="text-white text-center pt-4 px-[40px] lg:text-start lg:font-semibold lg:text-[20px]">Save your fav
+        orites easily and always have something to watch.</p>
+    </div>
+    <div class="relative">
+      <img src="./assest/eleven.jpg" alt="">
+      <div
+        class="flex justify-between items-center w-[60%] bg-black  rounded-md border-2 border-gray-400 absolute left-2/4 bottom-[4%] -translate-x-1/2 py-1 px-1">
+        <div class="flex flex-col text-left">
+          <h1 class="text-white text-[17px] font-semibold">Stranger Things</h1>
+          <p class="text-blue-800 font-normal">Downloading...</p>
+        </div>
+        <div>
+          <img src="./assest/download-icon.gif" alt="Downloading Icon" class="w-12 z-[2]" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section3 -->
+  <div
+    class="flex justify-center items-center flex-col lg:flex-row lg:justify-between mt-10 border-b-4 border-gray-500 py-6 px-6">
+    <div class="w-3/4">
+      <h1 class="text-white text-center text-[22px] lg:text-[50px] lg:font-bold lg:text-start px-[40px]">Watch
+        everywhere.</h1>
+      <p class="text-white text-center pt-4 px-[40px] lg:text-start lg:font-semibold lg:text-[20px]">Stream unlimited
+        movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+    </div>
+    <div class="relative">
+      <img src="./assest/device-pile.png" class="relative z-[2]" alt="">
+      <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+        class="absolute top-[11%] left-[20%] max-w-[63%] max-h-[47%]" autoplay muted loop></video>
+
+    </div>
+  </div>
+
+
+  <!-- Section 4 -->
+  <div
+    class="flex flex-col lg:flex-row-reverse justify-center items-center lg:justify-between px-6 py-6 border-b-4 border-gray-500 mt-10">
+    <div class="w-3/4">
+      <h1 class="text-white text-center text-[22px] lg:text-[50px] lg:font-bold lg:text-start px-[40px]">Create profiles
+        for kids.</h1>
+      <p class="text-white text-center pt-4 px-[40px] lg:text-start lg:font-semibold lg:text-[20px]">Send kids on
+        adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    </div>
+    <div class="">
+      <img src="./assest/kids.png" alt="">
+    </div>
+
+  </div>
+
+  <!-- FAQS -->
+  <div class="px-12 max-w-7xl pt-5 mx-auto lg:mt-[20px] lg:px-24">
+    <h1 class="text-white font-semibold text-[20px]">Frequently Asked Questions</h1>
+
+    <div class="flex flex-col mt-4 gap-[6px]">
+      <div class="group bg-[#2d2d2d] ">
+        <div class="answer flex justify-between items-center px-5 py-[19px] border-b-2 border-black hover:bg-[#414141] cursor-pointer"
+          aria-controls="ans-1">
+          <h2 class="text-white font-semibold text-[17px] lg:text-[23px]">What is Netflix?</h2>
+          <i class="fa-solid fa-plus  lg:text-[24px] text-white transition-transform"></i>
+        </div>
+        <p id="ans-1" class="text-white text-[17px] lg:text-[20px] py-[30px] px-5 text-justify hidden  overflow-hidden transition-all duration-500 ease-in-out "">
+          Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+          documentaries, and more on thousands of internet-connected devices.
+          <br> <br>
+          You can watch as much as you want, whenever you want without a single commercial – all for one low monthly
+          price. There's always something new to discover and new TV shows and movies are added every week!
+        </p>
+      </div>
+
+      <div class="group bg-[#2d2d2d] ">
+        <div
+          class="answer flex justify-between items-center px-5 py-[19px] border-b-2 border-black hover:bg-[#414141] cursor-pointer"
+          aria-controls="ans-2">
+          <h2 class="text-white font-semibold text-[17px] lg:text-[23px]">How much does netflix cost?</h2>
+          <i class="fa-solid fa-plus  lg:text-[24px] text-white transition-transform"></i>
+        </div>
+        <p id="ans-2" class="text-white text-[17px] lg:text-[20px] py-[30px] px-5 text-justify hidden overflow-hidden transition-all duration-500 ease-in-out">
+          Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+          fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.
+        </p>
+      </div>
+
+      <div class="group bg-[#2d2d2d] ">
+        <div
+          class="answer flex justify-between items-center px-5 py-[19px] border-b-2 border-black hover:bg-[#414141] cursor-pointer"
+          aria-controls="ans-3">
+          <h2 class="text-white font-semibold text-[17px] lg:text-[23px]">Where can i watch?</h2>
+          <i class="fa-solid fa-plus  lg:text-[24px] text-white transition-transform"></i>
+        </div>
+        <p id="ans-3" class="text-white text-[17px] lg:text-[20px] py-[30px] px-5 text-justify hidden overflow-hidden transition-all duration-500 ease-in-out">
+          Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+               <br><br>
+          You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+        </p>
+      </div>
+
+
+      <div class="group bg-[#2d2d2d] ">
+        <div
+          class="answer flex justify-between items-center px-5 py-[19px] border-b-2 border-black hover:bg-[#414141] cursor-pointer"
+          aria-controls="ans-4">
+          <h2 class="text-white font-semibold text-[17px] lg:text-[23px]">How do I cancel?</h2>
+          <i class="fa-solid fa-plus  lg:text-[24px] text-white transition-transform"></i>
+        </div>
+        <p id="ans-4" class="text-white text-[17px] lg:text-[20px] py-[30px] px-5 text-justify hidden overflow-hidden transition-all duration-500 ease-in-out">
+          Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.        </p>
+      </div>
+
+      <div class="group bg-[#2d2d2d] ">
+        <div
+          class="answer flex justify-between items-center px-5 py-[19px] border-b-2 border-black hover:bg-[#414141] cursor-pointer"
+          aria-controls="ans-5">
+          <h2 class="text-white font-semibold text-[17px] lg:text-[23px]">What can i watch on Netflix?</h2>
+          <i class="fa-solid fa-plus  lg:text-[24px] text-white transition-transform"></i>
+        </div>
+        <p id="ans-5" class="text-white text-[17px] lg:text-[20px] py-[30px] px-5 text-justify hidden overflow-hidden transition-all duration-500 ease-in-out">
+          Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+        </p>      </div>
+
+        <div class="group bg-[#2d2d2d] ">
+          <div
+            class="answer flex justify-between items-center px-5 py-[19px] border-b-2 border-black hover:bg-[#414141] cursor-pointer"
+            aria-controls="ans-6">
+            <h2 class="text-white font-semibold text-[17px] lg:text-[23px]">Is Netflix good for Kids?</h2>
+            <i class="fa-solid fa-plus  lg:text-[24px] text-white transition-transform"></i>
+          </div>
+          <p id="ans-6" class="text-white text-[17px] lg:text-[20px] py-[30px] px-5 text-justify hidden overflow-hidden transition-all duration-500 ease-in-out">
+            The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+             <br><br>
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                    </p>      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Subscription Area -->
+
+  <div class="px-12 max-w-7xl py-5 mx-auto mt-3 md:mt-10">
+    <p class="text-white font-[500] md:text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="flex flex-col md:flex-row justify-start items-start md:justify-center md:items-center gap-1">
+    <input type="text" class="mt-4 w-full md:w-[50%] h-[50px] md:h-[54px]  md:py-4 bg-[#0f0f0f] border rounded-[6px]">
+   <div class="bg-red-700 mt-3 py-3 px-7 rounded-[7px]">
+    <button class="font-semibold text-white text-[20px]">
+      Get Started <i class="fa-solid fa-arrow-right ml-2 text-white"></i>
+    </button>
+   </div>
+  </div>
+  </div>
+
+
+  <!-- Footer? -->
+
+<footer class="px-12 mx-auto max-w-7xl mt-3 py-8 lg:px-24">
+<a href="" class="text-[#b3b3b3] underline py-1">Questions? Contact us.</a>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <ul class="text-[#b3b3b3] underline mt-6 text-[14px] ">
+    <li class="py-1"><a href="!#">FAQ</a></li>
+    <li class="py-1"><a href="!#">Investor Relation</a></li>
+    <li class="py-1"><a href="!#">Privacy</a></li>
+    <li class="py-1"><a href="!#">Speed test</a></li>
+   </ul>
+   <ul class="text-[#b3b3b3] underline lg:mt-6 text-[14px]">
+    <li class="py-1"><a href="!#"> Help Center</a></li>
+    <li class="py-1"><a href="!#">Jobs</a></li>
+    <li class="py-1"><a href="!#">Cookie Preferences</a></li>
+    <li class="py-1"><a href="!#">Legal Notice</a></li>
+   </ul>
+   <ul class="text-[#b3b3b3] underline lg:mt-6 text-[14px]">
+    <li class="py-1"><a href="!#">Account</a></li>
+    <li class="py-1"><a href="!#">Way to Watch</a></li>
+    <li class="py-1"><a href="!#">Corporate Information</a></li>
+    <li class="py-1"><a href="!#">Only on Netflix</a></li>
+   </ul>
+   <ul class="text-[#b3b3b3] underline lg:mt-6 text-[14px]">
+    <li class="py-1"><a href="!#"> Media Center</a></li>
+    <li class="py-1"><a href="!#">Term of use</a></li>
+    <li class="py-1"><a href="!#">Contact us</a></li>
+   </ul>
+</div>
+<div class="mt-8 py-4">
+  <select name="" id="" class=" bg-black px-4 py-1 lg:px-6 border text-[#b3b3b3] rounded-[4px]">
+    <option value="">English</option>
+    <option value="">Urdu</option>
+  </select>
+  <p class="text-[#7a7a7a] mt-6">Netflix Pakistan</p>
+</div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 20,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          640: {
+            items: 3,
+          },
+          1024: {
+            items: 4,
+          }
+        }
+      });
+    });
+
+
+
+
+
+  </script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
